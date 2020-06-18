@@ -2,14 +2,6 @@
   "host_groups" : [
     {
       "name" : "master",
-      "configurations" : [
-        {
-          "global" : {
-            "nagios_contact": "raov@avalonconsult.com",
-            "nagios_web_password": "password"
-          }
-        }
-      ],
       "components" : [
         {
           "name" : "NAMENODE"
@@ -22,12 +14,6 @@
         },
         {
           "name" : "HISTORYSERVER"
-        },
-        {
-          "name" : "NAGIOS_SERVER"
-        },
-        {
-          "name" : "GANGLIA_SERVER"
         },
         {
           "name" : "APP_TIMELINE_SERVER"
@@ -67,9 +53,6 @@
         },
         {
           "name" : "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name" : "GANGLIA_MONITOR"
         }
       ],
       "cardinality" : "2"
@@ -77,6 +60,6 @@
   ],
   "Blueprints" : {
     "stack_name" : "HDP",
-    "stack_version" : "2.1"
+    "stack_version" : "2.6"
   }
 }
