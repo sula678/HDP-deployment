@@ -1,1 +1,1 @@
-# HDP-deployment
+HDP configuration scripts
